@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.main_background {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 220px;
+}
+
+.lirio_left {
+}
