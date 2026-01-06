@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@font-face {
+        font-family: "Playlist Script";
+        src: url('./fonts/PlaylistScript.otf');
+    }
+
+#nome_leticia {
+    color: #A47617;
+    font-family: "Playlist Script";
+    left: -10px;
+}
+
+#nome_vinicius {
+    color: #717B74;
+    font-family: "Playlist Script";
+}
+
+.nomes{
+    font-size: 40px;
+}
+
+#nomes_e {
+    color: #3E4F2D;
+    top: -10px;
+    position: relative;
+    font-size: 35px;
+    font-family: "Dancing Script";
+}
+
+.div_nomes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.div_nomes > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
