@@ -9,34 +9,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
-.background {
-    position: fixed;
+.wallpaper {
     width: 100%;
-    height: auto;
     align-self: center;
     justify-self: center;
     z-index: -2;
+    position: absolute;
+}
+
+.background {
+    width: 100%;
+    z-index: 1;
+    top: 210px;
+    align-self: center;
 }
 
 main {
-    position: absolute;
-    top: 220px;
     width: 100%;
     z-index: 1;
-}
-
-.main_background {
-    width: 100vw;
-    z-index: -1;
+    position: absolute;
 }
 
 .nomes_container {
@@ -52,4 +50,25 @@ main {
     font-size: 23px;
     color: #333333;
     line-height: 1.5;
+}
+
+
+.lirio, .tulipa {
+    width: 50px;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.none {
+    display: none;
+}
+
+/* Animação de fade-in inicial */
+.fadein_inicial_wallpaper {
+    animation: fadein_inicial_wallpaper 1s ease-in forwards;
+}
+
+.fadein_inicial_background {
+    animation: fadein_inicial_background 1s ease-in forwards;
 }
