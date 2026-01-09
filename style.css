@@ -17,7 +17,7 @@ body {
 }
 
 .wallpaper {
-    width: 100%;
+    width: 90%;
     align-self: center;
     justify-self: center;
     z-index: -2;
@@ -34,7 +34,7 @@ main {
     width: 100%;
     z-index: 1;
     position: absolute;
-    top: 400px;
+    top: 350px;
 }
 
 .nomes_container {
