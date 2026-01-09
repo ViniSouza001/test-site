@@ -27,7 +27,6 @@ body {
 .background {
     width: 100%;
     z-index: 1;
-    top: 210px;
     align-self: center;
 }
 
@@ -35,6 +34,7 @@ main {
     width: 100%;
     z-index: 1;
     position: absolute;
+    top: 210px;
 }
 
 .nomes_container {

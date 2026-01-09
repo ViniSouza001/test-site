@@ -24,23 +24,23 @@
 @keyframes fadein_inicial_wallpaper {
     from {
         opacity: 0;
-        top: 10vh;
+        /* top: 10vh; */
     }
 
     to {
         opacity: 1;
-        top: 0;
+        /* top: 10vh; */
     }
 }
 
 @keyframes fadein_inicial_background {
     from {
         opacity: 0;
-        top: 310px;
+        /* top: 310px; */
     }
 
     to {
         opacity: 1;
-        top: 210px;
+        /* top: 210px; */
     }
 }

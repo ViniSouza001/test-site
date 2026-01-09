@@ -102,6 +102,6 @@ setInterval(() => {
 
 
 // função gatilho
-setInterval(criarFlor, 3500);
+setInterval(criarFlor, 500);
 // Começa a remover flores apenas após 5 segundos, depois remove uma a cada 8s
-setTimeout(() => setInterval(tirarFlor, 8000), 8000);
+setTimeout(() => setInterval(tirarFlor, 5000), 8000);
