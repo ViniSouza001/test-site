@@ -2,11 +2,8 @@ const body = document.querySelector('body');
 const main = document.querySelector('main');
 
 const randomImg = (img) => {
-    const randomNumber = numeroAleatorio(0, 3, true);
+    const randomNumber = numeroAleatorio(0, 2, true);
     if(randomNumber === 0) {
-        img.src = './assets/petala.png';
-        img.classList.add('petalas');
-    } else if(randomNumber === 1) {
         img.src = './assets/petala2.png';
         img.classList.add('petalas');
     } else {
