@@ -2,13 +2,16 @@ const body = document.querySelector('body');
 const main = document.querySelector('main');
 
 const randomImg = (img) => {
-    const randomNumber = numeroAleatorio(0, 2, true);
+    const randomNumber = numeroAleatorio(0, 3, true);
     if(randomNumber === 0) {
-        img.src = './assets/lirio.jpg';
-        img.classList.add('lirio');
+        img.src = './assets/petala.png';
+        img.classList.add('petalas');
+    } else if(randomNumber === 1) {
+        img.src = './assets/petala2.png';
+        img.classList.add('petalas');
     } else {
-        img.src = './assets/lirios.png';
-        img.classList.add('tulipa');
+        img.src = './assets/petala3.png';
+        img.classList.add('petalas');
     }
 
 }
@@ -16,9 +19,9 @@ const randomImg = (img) => {
 const criarFlor = () => {
     const altura = Math.random() * window.innerHeight
     const flor = document.createElement('img');
-    // randomImg(flor);
-    flor.src = './assets/lirios.png';
-    flor.classList.add('lirios');
+    randomImg(flor);
+    // flor.src = './assets/petala.png';
+    // flor.classList.add('lirios');
     flor.style.top = `${altura}px`;
     flor.style.left = `${pegarLargura()}vw`;
     body.appendChild(flor);
