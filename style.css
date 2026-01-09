@@ -66,8 +66,8 @@ main {
 }
 
 
-.lirio, .tulipa {
-    width: 50px;
+.lirio, .lirios {
+    width: 80px;
     position: absolute;
     border-radius: 10px;
     z-index: 10;

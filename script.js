@@ -16,7 +16,9 @@ const randomImg = (img) => {
 const criarFlor = () => {
     const altura = Math.random() * window.innerHeight
     const flor = document.createElement('img');
-    randomImg(flor);
+    // randomImg(flor);
+    flor.src = './assets/lirios.png';
+    flor.classList.add('lirios');
     flor.style.top = `${altura}px`;
     flor.style.left = `${pegarLargura()}vw`;
     body.appendChild(flor);
@@ -80,9 +82,9 @@ const pegarLargura = () => {
     // Gera um número aleatório entre 0-15 ou 75-90 (em %) para definir a posição horizontal da flor
     const numAleatorio = numeroAleatorio(0, 2, true);
     if(numAleatorio === 0) {
-        return numeroAleatorio(0, 15, true);
+        return numeroAleatorio(0, 20, true);
     } else {
-        return numeroAleatorio(75, 85, true)
+        return numeroAleatorio(70, 80, true)
     }
 }
 
