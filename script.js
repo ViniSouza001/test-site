@@ -7,7 +7,7 @@ const randomImg = (img) => {
         img.src = './assets/lirio.jpg';
         img.classList.add('lirio');
     } else {
-        img.src = './assets/tulipa.png';
+        img.src = './assets/lirios.png';
         img.classList.add('tulipa');
     }
 
@@ -99,7 +99,6 @@ setInterval(() => {
     main.classList.remove('none');
     main.classList.add('fadein_inicial_background');
 }, 1000)
-
 
 // função gatilho
 setInterval(criarFlor, 500);
